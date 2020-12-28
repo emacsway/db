@@ -1,7 +1,7 @@
 SHELL					        ?= bash
 
-POSTGRES_VERSION      ?= 11
-POSTGRES_SUPPORTED    ?= 12 $(POSTGRES_VERSION) 10 9
+POSTGRES_VERSION      ?= 10.6-alpine
+POSTGRES_SUPPORTED    ?= 12 11 $(POSTGRES_VERSION) 9
 PROJECT               ?= upper_postgres_$(POSTGRES_VERSION)
 
 DB_HOST               ?= 127.0.0.1
